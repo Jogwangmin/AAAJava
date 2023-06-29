@@ -15,10 +15,11 @@ public class Run {
 		Exercise_Array1 exArr = new Exercise_Array1();
 //		exArr.exercise1();
 //		exArr.exercise2();
-		exArr.arryCopyExercise();
+//		exArr.arryCopyExercise();
+		exArr.lottoExercise();
 		
 		Exercise_For exFor = new Exercise_For();
 //		exFor.forExercise2();
-		exFor.forDoubleExercise1();
+//		exFor.forDoubleExercise1();
 	}
 }
