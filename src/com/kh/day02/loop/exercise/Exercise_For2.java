@@ -10,7 +10,7 @@ public class Exercise_For2 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수 하나 입력 : ");
 		int num = sc.nextInt();
-		if(num >= 1 && num <= 10) {
+		if(num >= 1 && num < 10) {
 			for(int i = 1; i < 10; i++) {
 				System.out.println(num + "X" + i + " = " + num*i);
 			}

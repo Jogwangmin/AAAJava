@@ -9,9 +9,15 @@ public class Circle {
 	// ===================================> 필드
 	
 	public Circle() {  // 생성자
-		
+		// 초기화
+		radius = 1;
+		name = "아무개" ; // 필드에 값을 넣음 -> 객체 초기화
 	}
 	// ===================================> 생성자
+	public Circle(int radius, String name) {
+		this.radius = radius;
+		this.name = name;
+	}
 	public double getArea() {  // 원의 넓이를 구해주는 메소드
 		return 3.14*radius*radius;
 	}
