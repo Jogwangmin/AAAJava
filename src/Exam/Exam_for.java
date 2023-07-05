@@ -1,5 +1,5 @@
-package Exam;
 
+package Exam;
 import java.util.Scanner;
 
 public class Exam_for {
