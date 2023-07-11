@@ -18,7 +18,7 @@ public class Exam_ImageCopy {
 		File src = new File("c:\\Windows\\Web\\Wallpaper\\Theme1\\img1.jpg");
 		File dest = new File("c:\\Temp\\copyimg.jpg");
 		int readByte;
-		byte [] readBytes = new byte[1024*10]; // 속도 빠르게 가능
+		byte [] readBytes = new byte[1024*10]; // 속도 빠르게 가능 배열을 이용하여 10KB씩 쓰려고 함.
 		try {
 			is = new FileInputStream(src);
 			os = new FileOutputStream(dest);
@@ -27,8 +27,8 @@ public class Exam_ImageCopy {
 				readByte = is.read(readBytes);
 //				if(readByte == -1) break;
 //				os.write((char)readByte);
-				os.write(readBytes, 0, readByte); // 0부터 읽은곳까지
-				if(readByte < readBytes.length) break;
+				os.write(readBytes, 0, readByte); // 0부터 읽은곳까지. 고속복사하는 코드, 10KB를 읽어서 복사함
+				if(readByte < readBytes.length) break; // 읽은 갯수가 현저히 적어지면 무한반복 탈출
 			}
 			is.close();
 			os.close();
