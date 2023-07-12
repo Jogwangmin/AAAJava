@@ -11,7 +11,6 @@ public class Exam_MyFrame extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Exam_MyFrame exFrame = new Exam_MyFrame();
 	}
 	

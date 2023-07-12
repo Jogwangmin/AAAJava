@@ -16,7 +16,6 @@ public class Exam_IndepClassListener extends JFrame{
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		JButton btn = new JButton("Action");
-//		btn.addEventListener("click", function() {});
 		btn.addActionListener(new MyActionListener()); // null위치에 동작할 코드를 만들어줘야함
 		c.add(btn);
 		

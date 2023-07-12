@@ -17,7 +17,7 @@ public class Exam_GridLayout extends JFrame{
 		GridLayout grid = new GridLayout(5, 2);
 		grid.setVgap(5); 
 		Container c = getContentPane();
-//		c.setLayout(new GridLayout(4, 2, 0, 5)); // 4열 2행
+//		c.setLayout(new GridLayout(4, 2, 0, 5)); // 4열 2행.
 		c.setLayout(grid);
 		
 		c.add(new JLabel(" 이름"));

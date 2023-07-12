@@ -17,7 +17,7 @@ public class Exam_InnerClassListener extends JFrame{
 		c.setLayout(new FlowLayout());
 		JButton btn = new JButton("Action");
 //		btn.addEventListener("click", function() {});
-		btn.addActionListener(new MyActionListener()); // null위치에 동작할 코드를 만들어줘야함
+		btn.addActionListener(new MyActionListener()); // null위치에 동작할 코드를 만들어줘야함.
 		c.add(btn);
 		
 		setSize(350, 150);

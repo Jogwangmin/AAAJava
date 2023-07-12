@@ -2,6 +2,7 @@ package com.kh.day13.swing.event;
 
 import java.awt.Container;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -19,8 +20,17 @@ public class Exam_MouseAdapter extends JFrame{
 		Container c = getContentPane();
 		c.setLayout(null);
 		c.add(la);
+		// 추상클래스는 이렇게 사용하기도 함.
+		// 인터페이스로 구현하면 모든 추상메소드를 오버라이딩해야하지만,
+		// 추상클래스로 만들면 원하는 추상메소드만 오버라이딩해도 됨.
+		// 추상클래스 추상메소드 말고는 다른 메소드를 가질 수 있기 떄문임.
 		c.addMouseListener(new MouseAdapter() {
-			
+			@Override
+			public void mousePressed(MouseEvent e) {
+				int x = e.getX();
+				int y = e.getY();
+				la.setLocation(x, y);
+			}
 		});
 		
 		setSize(250, 250);

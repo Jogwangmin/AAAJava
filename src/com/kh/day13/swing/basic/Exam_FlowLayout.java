@@ -13,7 +13,7 @@ public class Exam_FlowLayout  extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		Container c = getContentPane();
-		// 수평간격(hGap)이 30, 수직간격(vGap)이 40픽셀로하고 LEFT로 정렬배치
+		// 수평간격(hGap)이 30, 수직간격(vGap)이 40픽셀로하고, LEFT로 정렬배치
 		c.setLayout(new FlowLayout(FlowLayout.LEFT, 30, 40));
 		c.add(new JButton("add"));
 		c.add(new JButton("sub"));

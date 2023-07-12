@@ -14,7 +14,7 @@ public class Exam_ContentPane extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 실제 종료하도록 함. 그전엔 창이 닫혔지만 프로그램은 실행중이었음
 		
 		Container contentPane = getContentPane();
-		contentPane.setBackground(Color.PINK); // 파란색에 기울어져있다 final static
+		contentPane.setBackground(Color.PINK); // 파란색에 기울어져있다. final static
 		contentPane.setLayout(new FlowLayout());
 		
 		contentPane.add(new JButton("OK"));

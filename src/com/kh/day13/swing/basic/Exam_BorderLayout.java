@@ -12,7 +12,7 @@ public class Exam_BorderLayout extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		Container c = getContentPane();
-		// 수평간격(hGap) 30, 수직간격(vGap) 20 픽셀로 하는 BorderLayout
+		// 수평간격(hGap) 30, 수직간격(vGap) 20 픽셀로 하는 BorderLayout,
 		c.setLayout(new BorderLayout(30, 20));
 		c.add(new JButton("Calculator"), BorderLayout.CENTER);
 		c.add(new JButton("add"), BorderLayout.NORTH);

@@ -22,7 +22,7 @@ public class Exam_NullLayout extends JFrame{
 		
 		for(int i = 1; i <= 9; i++) {
 			JButton btn = new JButton(String.valueOf(i)); // i는 int이기에 String으로 바꿔줌
-			btn.setLocation(i*15, i*15); // 좌표
+			btn.setLocation(i*15, i*15); 
 			btn.setSize(50, 20);
 			c.add(btn);
 		}

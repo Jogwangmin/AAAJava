@@ -33,7 +33,6 @@ public class Exam_AnonymousClassListener extends JFrame{
 		setSize(350, 150);
 		setVisible(true);
 	}
-	
 	public static void main(String[] args) {
 		new Exam_AnonymousClassListener();
 	}
