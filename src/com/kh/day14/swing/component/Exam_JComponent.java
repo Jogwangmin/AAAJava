@@ -32,7 +32,7 @@ public class Exam_JComponent extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				JButton jb = (JButton)e.getSource();	// 이벤트가 발생한 Component(요소)를 나타냄
-				Exam_JComponent frame = (Exam_JComponent)jb.getTopLevelAncestor();
+				Exam_JComponent frame = (Exam_JComponent)jb.getTopLevelAncestor(); // 좌표를 타이틀에 표시해줌
 				frame.setTitle(jb.getX() + ", " + jb.getY());
 			}
 		});
